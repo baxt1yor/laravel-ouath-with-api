@@ -1,0 +1,21 @@
+includes:
+    - ./vendor/larastan/larastan/extension.neon
+
+parameters:
+
+    paths:
+        - app
+        - config
+        - database
+        - routes
+
+    level: max
+
+    ignoreErrors:
+        - '#Other error to ignore everywhere#'
+
+    parallel:
+        maximumNumberOfProcesses: 4
+
+    noUnnecessaryCollectionCall: false
+    checkMissingIterableValueType: false
